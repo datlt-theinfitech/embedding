@@ -13,8 +13,7 @@ class SentencesRequest(BaseModel):
 @app.on_event("startup")
 async def load_model():
     global model
-    model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
-    # model = SentenceTransformer(model_name)
+    model = SentenceTransformer("jinaai/jina-embeddings-v3", trust_remote_code=True)
     print("Model loaded successfully at startup.")
 
 @app.post("/embed")
