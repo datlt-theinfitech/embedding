@@ -1,0 +1,4 @@
+fastapi
+sentence_transformers
+boto3
+einops
