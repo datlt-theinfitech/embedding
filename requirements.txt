@@ -2,3 +2,10 @@ fastapi
 sentence_transformers
 boto3
 einops
+pyspark
+delta-spark
+pyarrow
+pandas
+memory_profiler
+faiss-cpu
+
